@@ -6,7 +6,7 @@ module.exports = function () {
 
 	this.rabbitmq = new Rabbitmq();
 
-	rabbitmq.config(this.config.get("rabbitmq.connection"));
+	this.rabbitmq.config(this.config.get("rabbitmq.connection"));
 
 	return Promise.resolve();
 }
